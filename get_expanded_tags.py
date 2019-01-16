@@ -8,7 +8,7 @@ import requests
 import pymongo
 from bs4 import BeautifulSoup as bs
 
-###### Get the books info
+###### Get the expanded tags from each book's detail view page
 
 ###### MongoDB connections ######
 g_mongo_client = pymongo.MongoClient("mongodb://localhost:27017")
