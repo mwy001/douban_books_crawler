@@ -71,6 +71,6 @@ if __name__ == "__main__":
                     g_douban_books_coll.update(query, payload, upsert=True)
 
                     pos = pos + 1
-            time.sleep(random.randint(10, 20))
+            time.sleep(random.randint(10, 30))
 
         g_douban_tags_coll.update({"path":tag_path}, {"$set":{"crawl_time":current_time_millis()}}, upsert=False)
